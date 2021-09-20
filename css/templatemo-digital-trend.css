@@ -5,7 +5,7 @@ DIGITAL TREND
 https://templatemo.com/tm-538-digital-trend
 
 */
-  
+
   @font-face {
       font-family: 'Plain-Regular';
       src: url('../fonts/Plain-Regular.woff2') format('woff2'),
@@ -66,7 +66,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     TYPOGRAPHY              
+     TYPOGRAPHY
   -----------------------------------------*/
 
   h1,h2,h3,h4,h5,h6 {
@@ -104,7 +104,7 @@ https://templatemo.com/tm-538-digital-trend
     line-height: 1.5em;
   }
 
-  b, 
+  b,
   strong {
     letter-spacing: 0;
     color: var(--secondary-color);
@@ -157,7 +157,7 @@ https://templatemo.com/tm-538-digital-trend
     border-color: transparent;
 	transition: all .3s ease;
   }
-  
+
   .custom-btn:hover,
   .custom-btn:focus {
     background: var(--dark-color);
@@ -167,7 +167,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     GENERAL               
+     GENERAL
   -----------------------------------------*/
 
   * {
@@ -189,12 +189,11 @@ https://templatemo.com/tm-538-digital-trend
     text-decoration: none;
   }
 
-  a:hover, 
-  a:active, 
+  a:hover,
+  a:active,
   a:focus {
     color: var(--secondary-color);
-    outline: none;
-    text-decoration: none;
+    text-decoration: underline !important;
   }
 
   ::selection {
@@ -217,7 +216,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-    MENU             
+    MENU
   -----------------------------------------*/
 
   .navbar {
@@ -277,11 +276,6 @@ https://templatemo.com/tm-538-digital-trend
     margin: 0 10px 0 0;
     width: 30px;
     height: 35px;
-    outline: none;
-  }
-
-  .navbar-toggler:focus {
-    outline: none;
   }
 
   .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -338,7 +332,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     HERO              
+     HERO
   -----------------------------------------*/
 
   .hero {
@@ -359,7 +353,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     PROJECT              
+     PROJECT
   -----------------------------------------*/
 
   .project {
@@ -415,10 +409,6 @@ https://templatemo.com/tm-538-digital-trend
     padding-left: 5px;
   }
 
-  .owl-theme .owl-dots .owl-dot {
-    outline: none;
-  }
-
   .owl-theme .owl-dots .owl-dot span {
     background: var(--gray-color);
     width: 50px;
@@ -426,7 +416,7 @@ https://templatemo.com/tm-538-digital-trend
     margin:  35px 5px;
   }
 
-  .owl-theme .owl-dots .owl-dot.active span, 
+  .owl-theme .owl-dots .owl-dot.active span,
   .owl-theme .owl-dots .owl-dot:hover span {
     background: var(--secondary-color);
   }
@@ -467,7 +457,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-      ABOUT            
+      ABOUT
   -----------------------------------------*/
 
   .about {
@@ -483,7 +473,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-      BLOG            
+      BLOG
   -----------------------------------------*/
 
   .blog-header {
@@ -531,7 +521,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     CONTACT              
+     CONTACT
   -----------------------------------------*/
 
   .newsletter-form .form-control,
@@ -561,7 +551,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     FOOTER              
+     FOOTER
   -----------------------------------------*/
 
   .site-footer {
@@ -597,7 +587,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     SOCIAL ICON              
+     SOCIAL ICON
   -----------------------------------------*/
 
   .social-icon {
@@ -622,7 +612,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
   /*---------------------------------------
-     RESPONSIVE STYLES              
+     RESPONSIVE STYLES
   -----------------------------------------*/
 
   @media screen and (min-width: 1200px) {
@@ -667,8 +657,8 @@ https://templatemo.com/tm-538-digital-trend
       margin: 1em 0;
     }
 
-    .copyright-text, 
-    .footer-link, 
+    .copyright-text,
+    .footer-link,
     .site-footer .social-icon {
       margin-top: 3em;
       padding: 0;
@@ -696,7 +686,7 @@ https://templatemo.com/tm-538-digital-trend
       margin: 0 auto;
     }
 
-    .footer-link, 
+    .footer-link,
     .site-footer .social-icon {
       margin-top: 1em;
     }
