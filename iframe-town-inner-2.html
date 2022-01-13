@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgba(250, 50, 0, 0.3);
+            height: 100%;
+            width: 100%;
+        }
+
+        iframe {
+            height: 200px;
+        }
+
+        .text {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+    <script>
+        function addIframe() {
+            const iframe = document.createElement('iframe');
+            iframe.src = './iframe-town-inner-added.html';
+            document.querySelector('.frame-container').appendChild(iframe);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="inner-frame-2" class="text">Inner iframe #2</div>
+        <button onclick="addIframe()">Add another iframe in...this iframe</button>
+    </div>
+    <div class="frame-container">
+        <iframe id="iframe-4" src="./iframe-town-inner-4.html"></iframe>
+    </div>
+</body>
+
+</html>
