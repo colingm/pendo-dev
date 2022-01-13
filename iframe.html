@@ -71,7 +71,7 @@
                     initializeSnippetOnTargetWindow(window);
                     addIframeWatcherToTargetWindow(window);
                     function initializeSnippetOnTargetWindow(window) {
-                        if (!window.location.href.includes('iframe-town')) return;
+                        if (!window.location.href.includes('iframe')) return;
 
                         const document = window.document;
                         // The idea here is that this is the literal copy-pasted snippet
