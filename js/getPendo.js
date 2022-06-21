@@ -79,6 +79,8 @@
       onClickCaptured: function(pendoEvent) {
         pendoEvent.addEventProperty('customProp', 'this is a custom prop');
       }
-    }
+    },
+    autoFrameInstall: true,
+    frameIdentitySync: true
   });
 })("41ed52dd-23c5-4129-6aae-42f19e679c86");

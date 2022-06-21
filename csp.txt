@@ -1,0 +1,4 @@
+script-src colingm.github.io app.pendo-dev.pendo-dev.com pendo-dev-static.storage.googleapis.com pendo-dev-static-5704241295392768.storage.googleapis.com data.pendo-dev.pendo-dev.com;
+style-src colingm.github.io app.pendo-dev.pendo-dev.com pendo-dev-static.storage.googleapis.com pendo-dev-static-5704241295392768.storage.googleapis.com fonts.googleapis.com fonts.gstatic.com;
+img-src colingm.github.io pendo-dev-static.storage.googleapis.com data.pendo-dev.pendo-dev.com app.pendo-dev.pendo-dev.com pendo-dev-static-5704241295392768.storage.googleapis.com data.pendo-dev.pendo-dev.com data:;
+connect-src app.pendo-dev.pendo-dev.com data.pendo-dev.pendo-dev.com pendo-dev-static-5704241295392768.storage.googleapis.com; frame-ancestors app.pendo-dev.pendo-dev.com;
