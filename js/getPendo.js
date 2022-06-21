@@ -72,5 +72,13 @@
     // 					console.debug('sanitizeUrl', url);
     // 					return url === 'https://support.pendo.io' ? 'https://www.google.com' : url;
     // 				}
+    excludeText: false,
+    enableGuideTimeout: true,
+    guideTimeout: 15000,
+    events: {
+      onClickCaptured: function(pendoEvent) {
+        pendoEvent.addEventProperty('customProp', 'this is a custom prop');
+      }
+    }
   });
 })("41ed52dd-23c5-4129-6aae-42f19e679c86");
