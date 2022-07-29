@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: 'Helvetica';
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 0;
+            }
+
+            #nav {
+                list-style: none;
+                padding: 20px;
+                margin: 0;
+                background: #666;
+            }
+
+            #nav li {
+                display: inline-block;
+            }
+
+            #nav li a {
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+
+            #nav li a.visitor.active {
+                outline: 1px solid white;
+            }
+
+            #nav li a:hover {
+                text-decoration: underline;
+            }
+
+            #content ul {
+                list-style: none;
+                padding: 20px;
+                margin: 0;
+            }
+
+            #content li {
+                display: inline-block;
+            }
+
+            .frame #addframe {
+                display: none;
+            }
+
+            button {
+                padding: 8px 16px;
+                border-radius: 4px;
+                font-size: 16px;
+                margin-right: 20px;
+            }
+
+            .framecontainer {
+                padding: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.js"></script>
+        <script type="text/javascript" src="dev-events.json"></script>
+    </head>
+
+    <body>
+        <ul id="nav">
+            <li><a href="rrweb.html">location 1</a></li>
+            <li><a href="?foo">location 2</a></li>
+            <li><a href="#foo">hash 1</a></li>
+            <li><a href="#">hash 2</a></li>
+        </ul>
+        <div id="content">
+            <ul>
+                <li><button id="one" type="button">One</button></li>
+                <li><button id="two" type="button">Two</button></li>
+                <li><button id="three" type="button">Three</button></li>
+                <li><button id="play" type="button">Play Video</button></li>
+            </ul>
+        </div>
+        <script>
+            const replayer = new rrweb.Replayer(events);
+            document.getElementById('play').addEventListener('click', function () {
+                replayer.play();
+            });
+        </script>
+    </body>
+</html>
