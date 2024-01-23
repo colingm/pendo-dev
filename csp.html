@@ -16,7 +16,7 @@ https://templatemo.com/tm-538-digital-trend
      <meta name="keywords" content="">
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <meta name="csp" http-equiv="Content-Security-Policy" content="script-src colingm.github.io app.pendo-dev.pendo-dev.com pendo-dev-static.storage.googleapis.com pendo-dev-static-5704241295392768.storage.googleapis.com data.pendo-dev.pendo-dev.com; style-src colingm.github.io 'unsafe-inline' app.pendo-dev.pendo-dev.com pendo-dev-static.storage.googleapis.com pendo-dev-static-5704241295392768.storage.googleapis.com fonts.googleapis.com fonts.gstatic.com; img-src colingm.github.io pendo-dev-static.storage.googleapis.com data.pendo-dev.pendo-dev.com app.pendo-dev.pendo-dev.com pendo-dev-static-5704241295392768.storage.googleapis.com data.pendo-dev.pendo-dev.com data: media.giphy.com i.imgur.com; connect-src app.pendo-dev.pendo-dev.com data.pendo-dev.pendo-dev.com pendo-dev-static-5704241295392768.storage.googleapis.com; frame-src app.pendo-dev.pendo-dev.com www.youtube.com youtube.com;"/>
+     <meta name="csp" http-equiv="Content-Security-Policy" content="default-src self; font-src self fonts.googleapis.com fonts.gstatic.com"/>
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -316,6 +316,32 @@ https://templatemo.com/tm-538-digital-trend
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
-     <script src="js/getPendo.js"></script>
+     <script>
+          // URL.createObjectURL
+          window.URL = window.URL || window.webkitURL;
+
+          // "Server response", used in all examples
+          var response = "self.onmessage=function(e){postMessage('Worker: '+e.data);}";
+
+          var blob;
+          try {
+               blob = new Blob([response], {type: 'application/javascript'});
+          } catch (e) { // Backwards-compatibility
+               window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder || window.MozBlobBuilder;
+               blob = new BlobBuilder();
+               blob.append(response);
+               blob = blob.getBlob();
+          }
+          try {
+               var worker = new Worker(URL.createObjectURL(blob));
+               // Test, used in all examples:
+               worker.onmessage = function(e) {
+                    alert('Response: ' + e.data);
+               };
+               worker.postMessage('Test');
+          } catch (e) {
+               alert('Worker constructor error: ' + e);
+          }
+     </script>
 </body>
 </html>
