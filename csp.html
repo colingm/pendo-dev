@@ -339,6 +339,9 @@ https://templatemo.com/tm-538-digital-trend
                     alert('Response: ' + e.data);
                };
                worker.postMessage('Test');
+               worker.onerror = function(e) {
+                    alert('worker onerror called: ', e);
+               }
           } catch (e) {
                alert('Worker constructor error: ' + e);
           }
