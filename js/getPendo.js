@@ -17,7 +17,7 @@
     y = e.createElement(n);
     y.async = !0;
     y.src =
-      "https://pendo-dev-static.storage.googleapis.com/agent/static/" +
+      "https://cdn.pendo-dev.pendo-dev.com/agent/static/" +
       apiKey +
       "/pendo.js";
     z = e.getElementsByTagName(n)[0];
